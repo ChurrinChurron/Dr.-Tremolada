@@ -1,0 +1,207 @@
+#testimonio {
+    background: url(../../assets/testimonios/fondo-testim-uno.png) no-repeat top left, 
+                url(../../assets/testimonios/fondo-testim-dos.png) no-repeat 100% 39em,
+                url(../../assets/testimonios/fondo-testim-uno.png) no-repeat center left,
+                url(../../assets/testimonios/fondo-testim-dos.png) no-repeat bottom right;
+    padding: 0 1.5em;
+}
+
+.experiencias__uno h2,
+.experiencias__dos h2,
+.experiencias__tres h2 {
+    margin-bottom: 1.5em;
+    font-size: 1.6em;
+    font-family: var(--averia);
+    color: var(--azul-oscuro);
+    text-align: center;
+}
+
+.experiencias__conten {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    justify-items: center;
+    gap: 3em;
+}
+
+.conten__caja {
+    max-width: 20em;
+    border-radius: .8em;
+    background: var(--azul-trans);
+}
+
+.conten__caja a {
+    position: relative;
+    text-decoration: none;
+}
+
+.conten__caja a::after {
+    content: url(../../assets/testimonios/reprod.png);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(.8);
+}
+
+.caja__texto {
+    padding: 1em;
+}
+
+.caja__texto p {
+    font-size: .9em;
+    color: var(--gris);
+}
+
+.caja__texto h4 {
+    margin-top: .850em;
+    color: var(--azul-oscuro);
+}
+
+.caja__texto h5 {
+    font-size: .9em;
+    color: var(--azul-oscuro);
+    font-weight: 300;
+}
+
+.experiencias__dos {
+    margin: 5em 0;
+}
+
+.experiencias__tres {
+    margin-bottom: 5em;
+}
+
+.experiencias__lista {
+    padding: 1em 0;
+    max-width: 30em;
+    margin: 0 auto;
+}
+
+.lista__caja {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    margin-bottom: 2em;
+    padding: 1em;
+    border-radius: .8em;
+    box-shadow: 0 0 7px 3px var(--gris-claro);
+    background: var(--blanco);
+}
+
+.lista__img {
+    width: 12em;
+    border-radius: 4em;
+    height: 10em;
+    background: var(--azul-trans);
+}
+
+.lista__img img  {
+    width: 5em;
+    border-radius: 50%;
+    border: 3px solid var(--celeste);
+}
+
+.lista__testimonio h3 {
+    font-style: italic;
+    font-weight: 300;
+    margin: .6em 0;
+    color: var(--azul-oscuro);
+    font-family: var(--averia);
+}
+
+.lista__testimonio p {
+    font-size: .9em;
+    color: var(--gris);
+}
+
+.lista__testimonio h4 {
+    margin: .3em 0;
+    color: var(--azul-oscuro);
+}
+
+.lista__testimonio h5 {
+    color: var(--gris);
+    font-weight: 300;
+}
+
+.experiencias__lista::-webkit-scrollbar {
+    width: .5em;
+    border-radius: 1em;
+    background: var(--gris-claro);
+}
+
+.experiencias__lista::-webkit-scrollbar-thumb {
+    background: var(--azul);
+    border-radius: 1em;
+}
+
+.experiencias__tres a {
+    display: block;
+    width: 6.5em;
+    margin: 5em auto 3em auto;
+    padding: .6em 1em;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid var(--azul-oscuro);
+    box-shadow: 2px 2px 0 var(--gris);
+    border-radius: .4em;
+    font-size: 1.1em;
+    font-weight: 700;
+    background: var(--blanco);
+    color: var(--azul-oscuro);
+    font-family: var(--averia);
+    transition: .3s;
+}
+
+.experiencias__tres a:hover {
+    box-shadow: 0 0 0;
+    background: var(--azul-oscuro);
+    color: var(--blanco);
+}
+
+@media screen and (width >= 1024px) {
+
+    .experiencias__uno h2,
+    .experiencias__dos h2,
+    .experiencias__tres h2 {
+        font-size: 2em;
+}
+    
+    .experiencias__conten {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0;
+        width: 65em;
+        margin: 0 auto;
+    }
+
+    .experiencias__lista {
+        max-width: 55em;
+        padding: 0 2.5em;
+        height: 50em;
+        overflow-y: scroll;
+    }
+
+    .lista__caja {
+        display: flex;
+        gap: 0;
+        gap: 0 3em;
+        padding: 3em;
+    }
+
+    .lista__img {
+        width: 11.5em;
+        height: 10em;
+    }
+
+    .lista__img img {
+        width: 6em;
+    }
+
+    .lista__testimonio {
+        width: 65em;
+    }
+
+    .lista__testimonio h3 {
+        font-size: 1.4em;
+    }
+}

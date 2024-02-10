@@ -1,0 +1,48 @@
+#servicios {
+    background: url(../../assets/testimonios/fondo-testim-uno.png) no-repeat 0 0 / 30em,
+    url(../../assets/testimonios/fondo-testim-dos.png) no-repeat 100% 30% / 30em;
+}
+
+.servicios {
+    padding: 0 1.5em;
+}
+
+.servicios .splide__arrow {
+    width: 3em;
+    height: 3em;
+    background: var(--amarillo);
+}
+
+.servicios .splide__arrow svg {
+    fill: var(--azul-oscuro);
+    height: 1.5em;
+    width: 1.5em;
+}
+
+.tremolada {
+    margin: 15em 1.5em 3em 1.5em;
+}
+
+@media screen and (width >= 1024px) {
+
+    .tremolada {
+        margin: 0;
+    }
+
+    .tremolada__fondo {
+        width: 100%;
+        height: 18em;
+        background: url(../../assets/fondo-vector.png) no-repeat center right, var(--celeste);
+    }
+}
+
+@media screen and (width >= 1536px) {
+
+    .servicios .splide__arrow--prev {
+        left: -3em;
+    }
+
+    .servicios .splide__arrow--next {
+        right: -3em;
+    }
+}

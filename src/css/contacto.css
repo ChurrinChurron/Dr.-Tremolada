@@ -1,0 +1,273 @@
+/* ----CONTACTO---- */
+
+.contacto {
+    padding: 0 1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+.datos__conten {
+    display: flex;
+    margin-block: 1em;
+}
+
+.datos__conten p {
+    margin-left: .8em;
+    color: var(--gris);
+}
+
+.datos__conten i {
+    font-size: 1.2em;
+    color: var(--azul-oscuro);
+}
+
+.datos__conten #datosTipo {
+    color: var(--azul-oscuro);
+}
+
+.contacto__datos a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 30em;
+    padding: .8em 1.5em;
+    margin: 1.3em auto;
+    text-decoration: none;
+    color: var(--blanco);
+    border-radius: .6em;
+    box-shadow: 3px 3px 0 var(--gris-claro);
+    font-family: var(--averia);
+    font-size: 1.1em;
+}
+
+#mapGoogle {
+    background: var(--azul-oscuro);
+}
+
+#mapGoogle img {
+    width: 1.3em;
+}
+
+#mapWaze {
+    background: var(--azul);
+}
+
+#mapWaze i {
+    font-size: 1.6em;
+}
+
+.contacto__form {
+    margin-bottom: 4em;
+}
+
+.contacto__form form {
+    max-width: 30em;
+    padding: 1.5em;
+    border-radius: 1.1em;
+    background: var(--blanco);
+    box-shadow: 0 7px 12px 2px var(--celeste);
+}
+
+.contacto__form form input, .contacto__form form textarea {
+    width: 100%;
+    padding: .8em;
+    margin-block: .5em;
+    background: var(--gris-mas-claro);
+    border: none;
+    outline: none;
+    border-radius: .5em;
+    color: var(--azul-oscuro);
+    font-family: var(--roboto);
+}
+
+.contacto__form form textarea {
+    resize: none;
+    height: 3em;
+}
+
+.contacto__form form input::placeholder, .contacto__form form textarea::placeholder {
+    color: var(--azul-oscuro);
+}
+
+.contacto__form form input[type=submit] {
+    display: block;
+    width: 7.5em;
+    margin: 0 auto;
+    color: var(--blanco);
+    background: var(--azul-oscuro);
+    border: 1px solid var(--azul-oscuro);
+    font-family: var(--averia);
+    font-weight: 700;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.mapa {
+    position: relative;
+    width: 100%;
+}
+
+.mapa picture img {
+    height: 50em;
+}
+
+#ubicMapa {
+    position: absolute;
+    top: 46%;
+    left: 44%;
+    transform: translate(-50%, -50%);
+    width: 12%;
+}
+
+.mapa__contacto {
+    position: absolute;
+    top: 76%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 35em;
+    border-radius: 1em;
+    padding: 1.5em;
+    background: var(--azul-oscuro);
+}
+
+.mapa__contacto h3 {
+    margin-bottom: .8em;
+    font-size: 1.4em;
+    color: var(--amarillo);
+    font-family: var(--averia);
+}
+
+.horarioDato {
+    color: var(--celeste);
+    font-weight: 700;
+}
+
+.mapa__conten {
+    display: flex;
+    margin-block: .6em;
+    color: var(--blanco);
+}
+
+.mapa__conten p {
+    margin-left: .8em;
+    font-size: .9em;
+}
+
+/* ----PÁGINA GRACIAS---- */
+
+#gracias {
+    position: relative;
+    height: 100dvh;
+    background: url(../../assets/home/fondo-header-main.webp) no-repeat center center;
+    background-size: cover;
+}
+
+.gracias__texto {
+    width: 100%;
+    padding: 0 1.5em;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.gracias__texto h2 {
+    font-size: 2.2em;
+    font-family: var(--averia);
+    color: var(--blanco);
+}
+
+.gracias__texto p {
+    margin: 1em 0 2em 0;
+    color: var(--blanco);
+}
+
+.gracias__texto a {
+    display: block;
+    width: 10em;
+    margin: 1em auto;
+    padding: .7em 1em;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid var(--azul-oscuro);
+    box-shadow: 2px 2px 0 var(--gris);
+    border-radius: .4em;
+    font-size: 1.1em;
+    font-weight: 700;
+    background: var(--amarillo);
+    color: var(--azul-oscuro);
+    font-family: var(--averia);
+    transition: .3s;
+}
+
+.gracias__texto a:hover {
+    box-shadow: 0 0 0;
+    background: var(--azul-oscuro);
+    color: var(--blanco);
+}
+
+@media screen and (width >= 1024px) {
+    
+    /* ----CONTACTO---- */
+
+    .contacto {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 0 8em;
+    }
+
+    .contacto__form form {
+        max-width: 25em;
+    }
+
+    .contacto__form form input, .contacto__form form textarea {
+        font-size: 1em;
+    }
+
+    #ubicMapa {
+        top: 46%;
+        left: 30.5%;
+        width: 4%;
+    }
+    
+    .mapa__contacto {
+        position: absolute;
+        top: 50%;
+        left: 63%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+        max-width: 30em;
+    }
+
+    .mapa__contacto h3 {
+        font-size: clamp(1.3rem, -1.5rem + 6vw, 2rem);
+    }
+
+    .mapa__conten p {
+        font-size: clamp(1.1rem, -1.5rem + 9vw, 1.1rem);
+    }
+
+    /* ----PÁGINA GRACIAS---- */
+
+    .gracias__texto h2 {
+        font-size: 3em;
+    }
+    
+    .gracias__texto p {
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (width >= 1400px) {
+    
+    .contacto {
+        max-width: 88em;
+        margin: 8em auto 0 auto;
+    }
+}

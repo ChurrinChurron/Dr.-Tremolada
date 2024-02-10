@@ -281,7 +281,7 @@ main img{
 
 .servicios .splide__slide p {
     color: var(--gris);
-    font-size: .9em;
+    font-size: .850em;
     height: auto;
     opacity: 1;
     transition: .3s;

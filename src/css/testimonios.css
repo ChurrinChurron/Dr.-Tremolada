@@ -161,6 +161,14 @@
 
 @media screen and (width >= 1024px) {
 
+    #testimonio {
+        background: url(../../assets/testimonios/fondo-testim-uno.png) no-repeat top left / 40em, 
+                    url(../../assets/testimonios/fondo-testim-dos.png) no-repeat 100% 32em / 35em,
+                    url(../../assets/testimonios/fondo-testim-uno.png) no-repeat 0 55em / 35em,
+                    url(../../assets/testimonios/fondo-testim-dos.png) no-repeat bottom right / 35em;
+        padding: 0 1.5em;
+    }
+
     .experiencias__uno h2,
     .experiencias__dos h2,
     .experiencias__tres h2 {
@@ -175,8 +183,8 @@
     }
 
     .experiencias__lista {
-        max-width: 55em;
-        padding: 0 2.5em;
+        max-width: 58em;
+        padding: 1em 5em 0 2em;
         height: 50em;
         overflow-y: scroll;
     }
@@ -185,7 +193,7 @@
         display: flex;
         gap: 0;
         gap: 0 3em;
-        padding: 3em;
+        padding: 2em 3em;
     }
 
     .lista__img {

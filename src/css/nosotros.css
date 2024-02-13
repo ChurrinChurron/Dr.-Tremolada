@@ -151,8 +151,8 @@
     #nosotros {
         background: url(../../assets/testimonios/fondo-testim-uno.png) no-repeat 0 0 / 32em,
                     url(../../assets/testimonios/fondo-testim-dos.png) no-repeat 100% 11% / 28em,  
-                    url(../../assets/testimonios/fondo-testim-uno.png) no-repeat 0 22% / 28em,
-                    url(../../assets/nosotros/fondo-nosotros.png) no-repeat 0 47% / 14em;
+                    url(../../assets/testimonios/fondo-testim-uno.png) no-repeat 0 25% / 34em,
+                    url(../../assets/nosotros/fondo-nosotros.png) no-repeat 0 44% / 22%;
     }
 
     .nosotros {

@@ -230,7 +230,7 @@ main img{
 }
 
 .servicios .splide__list {
-    padding: 2em 0 !important;
+    padding: 1em 0 !important;
 }
 
 .servicios .splide__slide {
@@ -778,7 +778,12 @@ footer a img {
     .header__titulo h1 {
         right: .6em;
         top: 3em;
-        font-size: clamp(2.3rem, -1.5rem + 6vw, 4rem);
+        font-size: clamp(2.3rem, -1.5rem + 5vw, 4rem);
+    }
+
+    .header__titulo img {
+        position: relative;
+        top: -2em;
     }
 
     /* ----SLIDER SERVICIOS---- */
@@ -791,8 +796,8 @@ footer a img {
 
     .servicios .splide__slide {
         width: 22em  !important;
-        height: 22em;
-        margin: 0 .5em;
+        height: 24.5em;
+        margin: 0 .8em;
         padding: 2em 3em;
         box-shadow: 0 0 5px 1px var(--gris);
         background-color: var(--blanco);
@@ -802,7 +807,7 @@ footer a img {
     }
 
     .servicios .splide__slide:hover {
-        height: 31em;
+        height: 32em;
     }
 
     .servicios .splide__slide h3 {
@@ -811,14 +816,14 @@ footer a img {
 
     .servicios .splide__slide .servicio__img {
         margin: 1em auto;
-        width: 10em;
-        height: 10em;
+        width: 12em;
+        height: 12em;
         border-radius: 50%;
         transition: .3s;
     }
     
     .servicios .splide__slide:hover .servicio__img {
-        height: 15em;
+        height: 16em;
         border-radius: 5em;
     }
 
@@ -831,7 +836,6 @@ footer a img {
     }
     
     .servicios .splide__slide:hover p {
-        color: var(--gris);
         font-size: .9em;
         height: auto;
         opacity: 1;
@@ -851,7 +855,7 @@ footer a img {
         gap: 0 3.5em;
         justify-content: center;
         width: 100%;
-        max-width: 55em;
+        max-width: 65em;
         margin: 0 auto;
         padding: 3.5em 4em;
         text-align: left;
@@ -880,7 +884,7 @@ footer a img {
         gap: 3em;
         margin-top: 3em;
         padding: 0 1.5em 4em 1.5em;
-        background: url(../../assets/fondo-testimonios.png) no-repeat bottom right, var(--celeste);
+        background: url(../../assets/fondo-testimonios.png) no-repeat bottom right / 35%, var(--celeste);
     }
     
     .testimonios__texto {
@@ -934,7 +938,7 @@ footer a img {
         align-items: center;
         text-align: left;
         padding: 8em;
-        background: url(../../assets/fondo-form-desktop.webp) no-repeat center right / 62%, var(--azul-oscuro);
+        background: url(../../assets/fondo-form-desktop.webp) no-repeat 125% 50% / 64%, var(--azul-oscuro);
     }
 
     .formulario__texto h2 {
@@ -962,7 +966,7 @@ footer a img {
 
     footer {
         padding: 4em 4em 2em 4em;
-        background-size: 17em, 48em;
+        background-size: 17em, 60em;
     }
 
     .footer__conten {
@@ -975,6 +979,10 @@ footer a img {
     .footer__correo {
         width: 20em;
         text-align: left;
+    }
+
+    .footer__correo form {
+        margin: .8em 0 1.5em 0;
     }
 
     .footer__menu {
@@ -998,5 +1006,23 @@ footer a img {
     
     .test__caja {
         width: 20em;
+    }
+}
+
+@media screen and (width >= 1400px) {
+    .tremolada__conten {
+        max-width: 75em;
+    }
+
+    .tremolada__texto {
+        margin-right: 10em;
+    }
+
+    .tremolada__texto h2 {
+        font-size: 1.8em;
+    }
+
+    .tremolada__texto p {
+        font-size: 1.1em;
     }
 }

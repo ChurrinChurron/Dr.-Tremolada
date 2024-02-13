@@ -260,6 +260,10 @@
 }
 
 @media screen and (width >= 1024px) {
+
+    #mainBlog {
+        background: url(../../assets/blog-articulo/fondo-blog.png) no-repeat 0 0 / 40em;
+    }
     
     /* ----ARTICULO BLOG---- */
     
@@ -330,7 +334,7 @@
     }
 
     .suscrib__conten {
-        background: url(../../assets/blog-articulo/fondo-blog-suscrib.png) no-repeat top right / 18em, var(--azul-oscuro);
+        background: url(../../assets/blog-articulo/fondo-blog-suscrib.png) no-repeat top right / 20em, var(--azul-oscuro);
         width: 55%;
         display: flex;
         flex-direction: column;
@@ -369,6 +373,10 @@
     
     #articBlog, .blog {
         max-width: 88em;
-        margin: 8em auto 0 auto;
+        margin: 3em auto 5em auto;
+    }
+
+    .suscrib__conten {
+        background: url(../../assets/blog-articulo/fondo-blog-suscrib.png) no-repeat top right / 28em, var(--azul-oscuro);
     }
 }

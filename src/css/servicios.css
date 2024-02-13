@@ -25,14 +25,26 @@
 
 @media screen and (width >= 1024px) {
 
+    #servicios {
+        background: url(../../assets/testimonios/fondo-testim-uno.png) no-repeat 0 0 / 35em,
+        url(../../assets/testimonios/fondo-testim-dos.png) no-repeat 100% 25% / 35em;
+    }    
+
+    .servicios .splide__arrow {
+        width: 3.5em;
+        height: 3.5em;
+        background: var(--blanco);
+        border: 1px solid var(--azul-oscuro);
+    }
+
     .tremolada {
         margin: 0;
     }
 
     .tremolada__fondo {
         width: 100%;
-        height: 18em;
-        background: url(../../assets/fondo-vector.png) no-repeat center right, var(--celeste);
+        height: 20em;
+        background: url(../../assets/fondo-vector.png) no-repeat 100% 25% / 50%, var(--celeste);
     }
 }
 

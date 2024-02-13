@@ -129,16 +129,17 @@ main {
     border-radius: .4em;
     font-size: 1.1em;
     font-weight: 700;
-    background: var(--amarillo);
-    color: var(--azul-oscuro);
+    background: var(--azul-oscuro);
+    color: var(--blanco);
+    border: 1px solid var(--blanco);
     font-family: var(--averia);
     transition: .3s;
 }
 
 .header__main a:hover {
     box-shadow: 0 0 0;
-    background: var(--azul-oscuro);
-    color: var(--blanco);
+    background: var(--amarillo);
+    color: var(--azul-oscuro);
 }
 
 /* ----SERVICIOS---- */
@@ -356,8 +357,8 @@ main {
 @media screen and (width >= 1024px) {
 
     main {
-        background: url(../../assets/testimonios/fondo-testim-uno.png) 0px 22% / 45em no-repeat, 
-                    url(../../assets/fondo-index.png) 100% 45% no-repeat;
+        background: url(../../assets/testimonios/fondo-testim-uno.png) 0px 23% / 48em no-repeat, 
+                    url(../../assets/fondo-index.png) 100% 41% / 16em no-repeat;
     }
     .header__main {
         padding: 8em 4em;
@@ -475,21 +476,22 @@ main {
     /* ----POR QUE ELEGIR A TREMOLADA---- */
 
     .tremolada {
-        margin-top: 10em;
+        margin-top: 5em;
     }
 
     /* ----TESTIMONIOS---- */
 
     .testimonios {
         padding: 6em 1.5em 4em 1.5em;
-        background: url(../../assets/fondo-vector.png) no-repeat top right, var(--celeste);
+        background: url(../../assets/fondo-vector.png) no-repeat top right / 34em, var(--celeste);
     }
 
     /* ----BLOG---- */
 
     .blog {
         max-width: 65em;
-        background: url(../../assets/home/fondo-index-dos.png) no-repeat top left;
+        background: url(../../assets/home/fondo-index-dos.png) no-repeat top left / 24em;
+        padding: 6em 1.5em 3em 1.5em;
     }
 
     .blog__conten {
@@ -529,7 +531,7 @@ main {
     }
 
     .header__img {
-        transform: translate(-60%, -67%);
+        transform: translate(-50%, -50%);
         width: 37em;
         height: 26em;
     }

@@ -206,12 +206,6 @@
     transition: .3s;
 }
 
-.gracias__texto a:hover {
-    box-shadow: 0 0 0;
-    background: var(--azul-oscuro);
-    color: var(--blanco);
-}
-
 @media screen and (width >= 1024px) {
     
     /* ----CONTACTO---- */
@@ -268,6 +262,6 @@
     
     .contacto {
         max-width: 88em;
-        margin: 8em auto 0 auto;
+        margin: 3em auto 0 auto;
     }
 }
